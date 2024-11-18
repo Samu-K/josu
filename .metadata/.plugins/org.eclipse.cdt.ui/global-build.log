@@ -1,0 +1,391 @@
+05:01:09 **** Clean-only build of configuration Debug for project Embedded_Exercise_normal ****
+make clean 
+rm -rf  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o  ./src/blinker.d  ./src/Interrupt_setup.d ./src/Pixel.d ./src/main.d ./src/platform.d  Embedded_Exercise_normal.elf.size  Embedded_Exercise_normal.elf
+rm: cannot remove `Embedded_Exercise_normal.elf': Permission denied
+make: [makefile:53: clean] Error 1 (ignored)
+' '
+05:01:09 **** Clean-only build of project Embedded_Exercise_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+05:01:10 **** Build of project Embedded_Exercise_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config' {aka 'struct <anonymous>'} [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1189:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1190:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+05:01:32 **** Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Interrupt_setup.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interrupt_setup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Interrupt_setup.d" -MT"src/Interrupt_setup.o" -o "src/Interrupt_setup.o" "../src/Interrupt_setup.c"
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:103:6: warning: unused variable 'a' [-Wunused-variable]
+  int a=0;
+      ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt':
+../src/Interrupt_setup.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupGpioInterruptSystem':
+../src/Interrupt_setup.c:176:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Interrupt_setup.c'
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:75:19: warning: initialization of 'uint8_t' {aka 'unsigned char'} from 'volatile uint8_t (*)[3]' {aka 'volatile unsigned char (*)[3]'} makes integer from pointer without a cast [-Wint-conversion]
+    uint8_t temp = dots[x];
+                   ^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot open output file Embedded_Exercise_normal.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+05:02:03 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot open output file Embedded_Exercise_normal.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+05:02:59 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot open output file Embedded_Exercise_normal.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+19:05:09 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c: In function 'setup':
+../src/Pixel.c:27:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%s","setup reached");
+  ^~~~~~
+../src/Pixel.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/Pixel.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/Pixel.c:9:1:
++#include <stdio.h>
+ 
+../src/Pixel.c:27:2:
+  printf("%s","setup reached");
+  ^~~~~~
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:77:19: warning: initialization of 'uint8_t' {aka 'unsigned char'} from 'volatile uint8_t (*)[3]' {aka 'volatile unsigned char (*)[3]'} makes integer from pointer without a cast [-Wint-conversion]
+    uint8_t temp = dots[x];
+                   ^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71344	   4264	  23600	  99208	  18388	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:05:23 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c: In function 'setup':
+../src/Pixel.c:27:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%s","setup reached");
+  ^~~~~~
+../src/Pixel.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/Pixel.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/Pixel.c:9:1:
++#include <stdio.h>
+ 
+../src/Pixel.c:27:2:
+  printf("%s","setup reached");
+  ^~~~~~
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:76:19: warning: initialization of 'uint8_t' {aka 'unsigned char'} from 'volatile uint8_t (*)[3]' {aka 'volatile unsigned char (*)[3]'} makes integer from pointer without a cast [-Wint-conversion]
+    uint8_t temp = dots[x];
+                   ^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71344	   4264	  23600	  99208	  18388	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:06:54 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c: In function 'setup':
+../src/Pixel.c:27:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%s","setup reached\n");
+  ^~~~~~
+../src/Pixel.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/Pixel.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/Pixel.c:9:1:
++#include <stdio.h>
+ 
+../src/Pixel.c:27:2:
+  printf("%s","setup reached\n");
+  ^~~~~~
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:69:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("%s","run reached\n");
+  ^~~~~~
+../src/Pixel.c:69:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/Pixel.c:80:19: warning: initialization of 'uint8_t' {aka 'unsigned char'} from 'volatile uint8_t (*)[3]' {aka 'volatile unsigned char (*)[3]'} makes integer from pointer without a cast [-Wint-conversion]
+    uint8_t temp = dots[x];
+                   ^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71828	   4264	  23600	  99692	  1856c	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:08:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:80:19: warning: initialization of 'uint8_t' {aka 'unsigned char'} from 'volatile uint8_t (*)[3]' {aka 'volatile unsigned char (*)[3]'} makes integer from pointer without a cast [-Wint-conversion]
+    uint8_t temp = dots[x];
+                   ^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71828	   4264	  23600	  99692	  1856c	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:10:26 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   4264	  23600	  99804	  185dc	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:13:54 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   4264	  23600	  99740	  1859c	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
