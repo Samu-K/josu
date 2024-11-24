@@ -77,16 +77,14 @@ void run(uint8_t x){
 			printf("%s","run y:");
 			printf("%d",y);
 			printf("%s","\n");
-			uint8_t temp = dots[x][y][color];
+			uint8_t temp = dots[color];
 			printf("%s","run temp:");
 			printf("%d",temp);
 			printf("%s","\n");
 			for(uint8_t byte_count=0;byte_count<8;byte_count++) {
 				if ((temp >> byte_count) & 0x01) {
-					printf("%s\n","true");
 					CTRL |= SDA_BIT;
 				} else {
-					printf("%s\n","false");
 					CTRL &= ~SDA_BIT;
 				}
 				CTRL &= ~SCK_BIT;
@@ -94,10 +92,6 @@ void run(uint8_t x){
 			}
 		}
 	}
-	CTRL &= ~LAT_BIT;
-	CTRL |= SDA_BIT;
-	CTRL &= ~SCK_BIT;
-	CTRL |= SCK_BIT;
 	latch();
 	CTRL &= ~SCK_BIT;
 	printf("%s","run finished\n");
@@ -114,7 +108,6 @@ void latch(){
 
 //Set one line (channel) as active, one at a time.
 void open_line(uint8_t x){
-	printf("%s\n","open line called");
 	CHANNEL = 0x00;
 	switch (x) {
 		case 0: CHANNEL |= 0x01;

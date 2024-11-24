@@ -114,7 +114,6 @@ void latch(){
 
 //Set one line (channel) as active, one at a time.
 void open_line(uint8_t x){
-	printf("%s\n","open line called");
 	CHANNEL = 0x00;
 	switch (x) {
 		case 0: CHANNEL |= 0x01;

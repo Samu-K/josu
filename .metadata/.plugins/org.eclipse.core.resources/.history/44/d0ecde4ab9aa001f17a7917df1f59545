@@ -100,6 +100,7 @@ void run(uint8_t x){
 	CTRL |= SCK_BIT;
 	latch();
 	CTRL &= ~SCK_BIT;
+	open_line(x);
 	printf("%s","run finished\n");
 
 }
@@ -114,7 +115,7 @@ void latch(){
 
 //Set one line (channel) as active, one at a time.
 void open_line(uint8_t x){
-	printf("%s\n","open line called");
+	printf("%s","open line called");
 	CHANNEL = 0x00;
 	switch (x) {
 		case 0: CHANNEL |= 0x01;
